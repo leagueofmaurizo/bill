@@ -2,11 +2,11 @@
 
 # BILL 2.0.17
 
-## Bill is an on-the-fly invoice generator web app
+## Invoice Generator Web App
 
 ![Bill is an online Invoice Generator](dist/bill_logo.png)
 
-#### Try it here [bill.junglestar.org](https://bill.junglestar.org)
+#### Bill works on-the-fly, no build needed. Try it here [bill.junglestar.org](https://bill.junglestar.org)
 
 Just enter your invoice data and download the invoice PDF.
 
