@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatura Oluşturucu (Canlı)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fatura Oluşturucu</h1>
+    <form id="billForm">
+      <label>Müşteri Adı:
+        <input type="text" id="customer" required>
+      </label>
+      <div id="items">
+        <div class="item">
+          <input type="text" class="item-name" placeholder="Ürün Adı" required>
+          <input type="number" class="item-qty" placeholder="Adet" min="1" value="1" required>
+          <input type="number" class="item-price" placeholder="Birim Fiyat (₺)" step="0.01" min="0" required>
+        </div>
+      </div>
+      <button type="button" id="addItem">+ Ürün Ekle</button>
+      <label>KDV (%):
+        <input type="number" id="tax" min="0" max="100" value="18" required>
+      </label>
+      <button type="submit">Fatura Oluştur</button>
+    </form>
+    <h2>Faturalar</h2>
+    <ul id="billList"></ul>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
