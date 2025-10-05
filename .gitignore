@@ -1,5 +1,2 @@
-_lab/
-.workinprogress/
-.sass-cache
-.DS_Store
-Icon
+node_modules
+.env
